@@ -1,0 +1,65 @@
+/* Reset default browser styles */
+body,
+p,
+h3,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the entire page */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the content both horizontally and vertically */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style recommendation text */
+.container p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style sentiment text */
+.container p b {
+    color: #007bff;
+}
+
+/* Style headlines */
+.container h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.container li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style the "Home" link */
+.container a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+/* Change link color on hover */
+.container a:hover {
+    color: #0056b3;
+}

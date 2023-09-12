@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get Stock Info</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>Get Stock Info</h3>
+      <!-- POST - insert data to a page called result-->
+      <form method="POST" action="\result">
+        <!-- label, text box to get user input, submit button -->
+        <label for="user_input">Enter a stock symbol:</label>
+        <input type="text" id="user_input" name="user_input" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

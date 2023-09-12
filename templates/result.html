@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <!-- Link to the external CSS file -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles_res.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <p>Recommendation: <b>{{ buy_sell }}</b></p>
+      <p>
+        Based on recent news articles, the sentiment of this company is
+        <b>{{ sentiment }}</b>
+      </p>
+      <h3>Yahoo Finance related news headlines:</h3>
+      <ul>
+        {% for item in headlines %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      <a href="/">Home</a>
+    </div>
+  </body>
+</html>
